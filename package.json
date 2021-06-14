@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/mikeanthony23/sunnyside-agency-landing-page#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.10.3"
+    "parcel": "^2.0.0-beta.3.1"
   }
 }
