@@ -7,25 +7,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sunny Side Agency</title>
   <link rel="shortcut icon" href="./src/images/favicon-32x32.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+
   <link rel="stylesheet" href="./src/scss/main.scss">
   <script defer src="./src/script.js"></script>
 </head>
 
 
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li class="logo"><a href="#"><img src="./src/images/logo.svg" alt="logo"></a></li>
+  <header class="header">
+    <div class="logo-container"><a href="#"><img class="logo-image" src="./src/images/logo.svg" alt="logo"></a></div>
+    <nav class="nav">
+      <!-- <ul>
         <li class="nav-links"><a href="#about">About</a></li>
         <li class="nav-links"><a href="#services">Services</a></li>
         <li class="nav-links"><a href="#reviews">Reviews</a></li>
         <li class="nav-links"><a href="#contact">CONTACT</a></li>
-      </ul>
+      </ul> -->
+      <div class="burger-menu menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
-    <h1><span>WE ARE CREATIVES</span></h1>
-    <figure><img src="./src/images/desktop/image-header.jpg" alt=""></figure>
-    <div><img src="./src/images/icon-arrow-down.svg" alt="icon-arrow-down"></div>
+
+    <ul class="show-burger-menu hidden">
+      <li class="nav-linkss"><a href="#about">About</a></li>
+      <li class="nav-linkss"><a href="#services">Services</a></li>
+      <li class="nav-linkss"><a href="#reviews">Reviews</a></li>
+      <li class="nav-linkss"><a href="#contact">CONTACT</a></li>
+    </ul>
+
+
+    <h1 class="welcome-message"><span>WE ARE CREATIVES</span></h1>
+    <a class="arrow" href="#about"><img src="./src/images/icon-arrow-down.svg" alt="icon-arrow-down"></a>
+    <!-- <img class="hd-bg" src="./src/images/mobile/image-header.jpg" alt=""> -->
   </header>
   <main>
     <section id="about">
@@ -35,7 +57,7 @@
         <a href="#">LEARN MORE</a>
       </div>
       <div>
-        <img src="./src/images/desktop/image-transform.jpg" alt="">
+        <!-- <img src="./src/images/desktop/image-transform.jpg" alt=""> -->
       </div>
       <div>
         <h2>Stand out to the right audience</h2>
@@ -45,12 +67,12 @@
         <a href="#">LEARN MORE</a>
       </div>
       <div>
-        <img src="./src/images/desktop/image-stand-out.jpg" alt="">
+        <!-- <img src="./src/images/desktop/image-stand-out.jpg" alt=""> -->
       </div>
     </section>
     <section id="services">
       <figure>
-        <img src="./src/images/desktop/image-graphic-design.jpg" alt="">
+        <!-- <img src="./src/images/desktop/image-graphic-design.jpg" alt=""> -->
         <figcaption>
           <h2>Graphic Design</h2>
           <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures
@@ -59,7 +81,7 @@
         </figcaption>
       </figure>
       <figure>
-        <img src="./src/images/desktop/image-photography.jpg" alt="">
+        <!-- <img src="./src/images/desktop/image-photography.jpg" alt=""> -->
         <figcaption>
           <h2>Photography</h2>
           <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business
@@ -96,17 +118,17 @@
     </section>
     <figure>
       <figure>
-        <img src="./src/images/desktop/image-gallery-milkbottles.jpg" alt="image of milkbottles">
+        <!-- <img src="./src/images/desktop/image-gallery-milkbottles.jpg" alt="image of milkbottles"> -->
       </figure>
       <figure>
-        <img src="./src/images/desktop/image-gallery-orange.jpg" alt="image of orange">
+        <!-- <img src="./src/images/desktop/image-gallery-orange.jpg" alt="image of orange"> -->
       </figure>
       <figure>
-        <img src="./src/images/desktop/image-gallery-cone.jpg" alt="image of cone">
+        <!-- <img src="./src/images/desktop/image-gallery-cone.jpg" alt="image of cone"> -->
 
       </figure>
       <figure>
-        <img src="./src/images/desktop/image-gallery-sugarcubes.jpg" alt="image of sugarcubes">
+        <!-- <img src="./src/images/desktop/image-gallery-sugarcubes.jpg" alt="image of sugarcubes"> -->
 
       </figure>
     </figure>
