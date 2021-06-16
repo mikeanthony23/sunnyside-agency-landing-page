@@ -1,0 +1,48 @@
+@use 'variables' as *;
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.about-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  & img {
+    width: 100%;
+  }
+}
+
+.about-description {
+  font-size: $pri-size;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding-bottom: 1.5em;
+
+  h2 {
+    font-family: $sec-font;
+    margin: 2em;
+    text-align: center;
+  }
+
+  p {
+    font-family: $pri-font;
+    text-align: center;
+    padding: 1em;
+    line-height: 1.5;
+    color: $dark-blue3;
+    position: relative;
+  }
+
+  .learn-more-link {
+    font-family: $sec-font;
+    padding: 1em;
+  }
+}
