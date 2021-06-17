@@ -8,7 +8,7 @@ $yellow: hsl(51, 100%, 49%);
 $dark-cyan1: hsl(167, 40%, 24%); // (graphic design text)
 $dark-cyan2: hsl(198, 62%, 26%); // (photography text)
 $dark-blue: hsl(198, 62%, 26%); // (footer)
-
+$footer-font: hsl(166, 33%, 42%);
 //secondary colors
 $dark-blue1: hsl(212, 27%, 19%);
 $dark-blue2: hsl(213, 9%, 39%);
@@ -17,7 +17,8 @@ $grayish-blue: hsl(210, 4%, 67%);
 $white: hsl(0, 0%, 100%);
 
 //bg color
-$bg-color: hsl(26, 100%, 98%);
+$bg-color1: hsl(26, 100%, 98%);
+$bg-color2: hsl(167, 44%, 70%);
 
 //font size
 $pri-size: 1.125rem;
@@ -27,5 +28,5 @@ $pri-font: 'Barlow', sans-serif;
 $sec-font: 'Fraunces', serif;
 
 //links
-$active-link: #f6d20a;
+$active-link: hsl(51, 93%, 50%);
 $non-active-link: #f7ebb1;
