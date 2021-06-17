@@ -1,0 +1,48 @@
+@use '../abstracts/abstractsIndex' as *;
+
+#reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  font-family: $pri-font;
+  line-height: 1.5;
+  & h3 {
+    padding: 1em 0;
+    text-align: center;
+    color: $grayish-blue;
+    font-family: $sec-font;
+  }
+}
+
+.review-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+  font-size: $pri-size;
+  & * {
+    margin: 1em 0;
+  }
+
+  & img {
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  & p {
+    margin-top: -0.5em;
+    color: $grayish-blue;
+  }
+
+  & h4 {
+    color: $dark-blue1;
+    font-family: $sec-font;
+  }
+}
+.review-details {
+  text-align: center;
+  color: $dark-blue2;
+}

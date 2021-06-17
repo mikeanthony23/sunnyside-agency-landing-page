@@ -1,0 +1,45 @@
+@use '../abstracts/variables' as *;
+
+#services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.services-desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-design {
+  margin-bottom: 2em;
+}
+.design,
+.photography {
+  width: 100%;
+}
+
+.design-texts {
+  margin-top: -261px;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  text-align: center;
+  font-size: $pri-size;
+  padding: 1em;
+  & h2 {
+    font-family: $sec-font;
+    color: $dark-cyan1;
+    padding: 1em;
+  }
+
+  & p {
+    font-family: $pri-font;
+    color: $dark-cyan1;
+    line-height: 1.5;
+  }
+}

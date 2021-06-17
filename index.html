@@ -13,8 +13,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-
-
   <link rel="stylesheet" href="./src/scss/main.scss">
   <script defer src="./src/script.js"></script>
 </head>
@@ -30,6 +28,12 @@
         <li class="nav-links"><a href="#reviews">Reviews</a></li>
         <li class="nav-links"><a href="#contact">CONTACT</a></li>
       </ul> -->
+      <ul class="show-burger-menu hidden">
+        <li class="nav-links"><a href="#about">About</a></li>
+        <li class="nav-links"><a href="#services">Services</a></li>
+        <li class="nav-links"><a href="#reviews">Reviews</a></li>
+        <li class="nav-links"><a href="#contact">CONTACT</a></li>
+      </ul>
       <div class="burger-menu menu">
         <span></span>
         <span></span>
@@ -37,12 +41,7 @@
       </div>
     </nav>
 
-    <ul class="show-burger-menu hidden">
-      <li class="nav-linkss"><a href="#about">About</a></li>
-      <li class="nav-linkss"><a href="#services">Services</a></li>
-      <li class="nav-linkss"><a href="#reviews">Reviews</a></li>
-      <li class="nav-linkss"><a href="#contact">CONTACT</a></li>
-    </ul>
+
 
 
     <h1 class="welcome-message"><span>WE ARE CREATIVES</span></h1>
@@ -51,7 +50,7 @@
   </header>
   <main class="main">
     <section id="about">
-      <figure class="about-image-container">
+      <figure class="about-image">
         <img src="./src/images/desktop/image-transform.jpg" alt="image of an egg">
         <div class="about-description">
           <h2>Transform your brand</h2>
@@ -60,7 +59,7 @@
           <p><a class="learn-more-link" href="#">LEARN MORE</a></p>
         </div>
       </figure>
-      <figure class="about-image-container">
+      <figure class="about-image">
         <img src="./src/images/desktop/image-stand-out.jpg" alt="">
         <div class="about-description">
           <h2>Stand out to the right audience</h2>
@@ -71,51 +70,64 @@
       </figure>
 
     </section>
-    <section id="services">
-      <figure>
-        <!-- <img src="./src/images/desktop/image-graphic-design.jpg" alt=""> -->
-        <figcaption>
+    <article id="services">
+      <!-- <img src="./src/images/desktop/image-graphic-design.jpg" alt=""> -->
+      <div class="services-desc services-design">
+        <img class="design" src="./src/images/mobile/image-graphic-design.jpg" alt="">
+        <div class="design-texts">
           <h2>Graphic Design</h2>
-          <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures
-            potential clients’
+          <p>Great design makes you memorable. We deliver artwork that underscores your brand potential client's
             attention.</p>
-        </figcaption>
-      </figure>
-      <figure>
-        <!-- <img src="./src/images/desktop/image-photography.jpg" alt=""> -->
-        <figcaption>
+        </div>
+      </div>
+
+      <!-- <img src="./src/images/desktop/image-photography.jpg" alt=""> -->
+      <div class="services-desc services-photography">
+        <img class="photography" src="./src/images/mobile/image-photography.jpg" alt="">
+        <div class="design-texts">
           <h2>Photography</h2>
           <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business
             image.</p>
-        </figcaption>
-      </figure>
-    </section>
-    <section id="reviews">
-      <h2>CLIENTS TESTIMONIALS</h2>
-      <div>
-        <address>
-          <img src="./src/images/image-emily.jpg" alt="">
-          <blockquote>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadline were
-            always hit.</blockquote>
-          <p>Emily R.</p>
-          <p>Marketing Director</p>
-        </address>
-        <address>
-          <img src="./src/images/image-thomas.jpg" alt="">
-          <blockquote>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a
-            satisfying and enjoyable experience.</blockquote>
-          <p>Thomas S.</p>
-          <p>Chief Operating Officer</p>
-        </address>
-        <address>
-          <img src="./src/images/image-jennie.jpg" alt="">
-          <blockquote>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly
-            recommended!</blockquote>
-          <p>Jennie F.</p>
-          <p>Business Owner</p>
-        </address>
-
+        </div>
       </div>
+
+    </article>
+    <section id="reviews">
+      <h3>CLIENTS TESTIMONIALS</h3>
+
+      <div class="reviews-contianer">
+        <div class="review-profile">
+          <img src="./src/images/image-emily.jpg" alt="">
+          <blockquote class="review-details">We put our trust in Sunnyside and they delivered, making sure our needs
+            were met and deadline were
+            always hit.
+          </blockquote>
+
+          <h4>Emily R.</h4>
+          <p>Marketing Director</p>
+        </div>
+
+        <div class="review-profile">
+          <img src="./src/images/image-thomas.jpg" alt="">
+          <blockquote class="review-details">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
+            success made it a
+            satisfying and enjoyable experience.
+          </blockquote>
+          <h4>Thomas S.</h4>
+          <p>Chief Operating Officer</p>
+        </div>
+
+        <div class="review-profile">
+          <img src="./src/images/image-jennie.jpg" alt="">
+          <blockquote class="review-details">Incredible end result! Our sales increased over 400% when we worked with
+            Sunnyside. Highly
+            recommended!
+          </blockquote>
+          <h4>Jennie F.</h4>
+          <p>Business Owner</p>
+        </div>
+      </div>
+
     </section>
     <figure>
       <figure>
