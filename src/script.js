@@ -1,29 +1,29 @@
-const burgerMenu = document.querySelector('.burger-menu');
-const header = document.querySelector('.header');
-const showMenu = document.querySelector('.show-burger-menu');
-const overlayHidden = document.querySelector('.overlay-hidden');
-const showOverlay = document.querySelector('.overlay-show');
+'use strict';
 
-const addOpacity = function () {
-  showMenu.classList.contains('hidden')
-    ? (burgerMenu.style.opacity = 1)
-    : (burgerMenu.style.opacity = 0.5);
+const burgerMenuBtn = document.querySelector('.burger-btn-container');
+const modalNavLinks = document.querySelector('.modal-nav-links');
+const overlay = document.querySelector('.overlay');
+
+const controlOpacity = function () {
+  overlay.classList.contains('show-overlay')
+    ? (burgerMenuBtn.style.opacity = 0.5)
+    : (burgerMenuBtn.style.opacity = 1);
 };
 
-burgerMenu.addEventListener('click', function (e) {
-  const btn = e.target.closest('.menu');
-  if (!btn) return;
-  showMenu.classList.toggle('hidden');
-  overlayHidden.classList.add('overlay-show');
-  if (showMenu.classList.contains('hidden'))
-    overlayHidden.classList.toggle('overlay-show');
-  addOpacity();
-});
+const openBurgerMenu = function () {
+  burgerMenuBtn.addEventListener('click', function () {
+    overlay.classList.toggle('show-overlay');
+    modalNavLinks.classList.toggle('hidden');
+    controlOpacity();
+  });
+};
+openBurgerMenu();
 
-overlayHidden.addEventListener('click', function (e) {
-  const btn = e.target;
-  if (!btn) return;
-  if (overlayHidden.classList.contains('overlay-show'))
-    showMenu.classList.toggle('hidden');
-  addOpacity();
-});
+const closeNavLinks = function () {
+  overlay.addEventListener('click', function () {
+    modalNavLinks.classList.toggle('hidden');
+    overlay.classList.toggle('show-overlay');
+    controlOpacity();
+  });
+};
+closeNavLinks();
