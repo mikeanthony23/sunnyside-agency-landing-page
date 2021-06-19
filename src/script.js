@@ -2,13 +2,8 @@
 
 // navigation menu selectors
 const burgerMenuBtn = document.querySelector('.burger-btn-container');
-const modalNavLinks = document.querySelector('.modal-nav-links');
+const modalNavLinks = document.querySelector('.nav-links-wrapper');
 const overlay = document.querySelector('.overlay');
-
-const aboutSection = document.querySelector('.about-content');
-const aboutSectionChild = document.querySelector(
-  '.about-transform-image-mobile'
-);
 
 // navigation menu functionality
 const controlOpacity = function () {
@@ -34,6 +29,3 @@ const closeNavLinks = function () {
   });
 };
 closeNavLinks();
-
-const renderDesktopImage = function () {};
-renderDesktopImage();
