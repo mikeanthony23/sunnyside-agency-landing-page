@@ -1,9 +1,16 @@
 'use strict';
 
+// navigation menu selectors
 const burgerMenuBtn = document.querySelector('.burger-btn-container');
 const modalNavLinks = document.querySelector('.modal-nav-links');
 const overlay = document.querySelector('.overlay');
 
+const aboutSection = document.querySelector('.about-content');
+const aboutSectionChild = document.querySelector(
+  '.about-transform-image-mobile'
+);
+
+// navigation menu functionality
 const controlOpacity = function () {
   overlay.classList.contains('show-overlay')
     ? (burgerMenuBtn.style.opacity = 0.5)
@@ -27,3 +34,6 @@ const closeNavLinks = function () {
   });
 };
 closeNavLinks();
+
+const renderDesktopImage = function () {};
+renderDesktopImage();

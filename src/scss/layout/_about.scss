@@ -13,7 +13,10 @@
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  & img {
+  & .transform {
+    width: 100%;
+  }
+  & .standout {
     width: 100%;
   }
 }
@@ -60,5 +63,40 @@
   &:active,
   &:focus {
     text-decoration-color: $active-link;
+  }
+}
+
+// DEKSTOP
+
+@media screen and (min-width: 1000px) {
+  .about-content {
+    flex-direction: row;
+    & .transform {
+      flex: 1;
+      order: 1;
+      min-width: 50%;
+      content: url('/src/images/desktop/image-transform.jpg');
+    }
+
+    & .standout {
+      flex: 1;
+      min-width: 50%;
+      content: url('/src/images/desktop/image-stand-out.jpg');
+    }
+  }
+
+  .about-description {
+    margin: 5em;
+    flex: 1;
+    & h2 {
+      text-align: left;
+      margin-left: 0.6em;
+    }
+    & p {
+      text-align: left;
+    }
+    & a {
+      text-align: left;
+    }
   }
 }

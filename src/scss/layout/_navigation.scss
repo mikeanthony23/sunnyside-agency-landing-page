@@ -114,7 +114,8 @@
   }
 
   .header {
-    // background: url(../images/desktop/image-header.jpg) no-repeat center;
+    background: url('/src/images/desktop/image-header.jpg') no-repeat center;
+    background-size: cover;
     padding: 1.5em;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -137,7 +138,7 @@
     position: static;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     background-color: unset;
     margin: 0;
