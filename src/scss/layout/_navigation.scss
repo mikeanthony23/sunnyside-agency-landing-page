@@ -46,7 +46,7 @@
   justify-self: center;
 }
 
-.modal-nav-links {
+.nav-links-wrapper {
   position: fixed;
   top: 70px;
   left: 0;
@@ -104,4 +104,56 @@
   right: 0;
   bottom: 0;
   z-index: 900;
+}
+
+// DEKSTOP DESIGN
+
+@media screen and (min-width: $bp-desktop) {
+  .burger-btn-container {
+    display: none;
+  }
+
+  .header {
+    // background: url(../images/desktop/image-header.jpg) no-repeat center;
+    padding: 1.5em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'logo nav'
+      'welcome-msg welcome-msg'
+      'arrow arrow';
+  }
+
+  .logo-container {
+    position: static;
+    padding: 0;
+    margin: 1em;
+  }
+
+  .nav {
+    grid-area: nav;
+  }
+
+  .nav-links-wrapper {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: unset;
+    margin: 0;
+    padding: 0;
+    &::after {
+      display: none;
+    }
+  }
+
+  .nav-links {
+    & a {
+      color: $light-cyan;
+    }
+
+    &:last-child a {
+      background: $white;
+    }
+  }
 }

@@ -50,11 +50,15 @@
   margin: 1em 1em 1.5em 1em;
   color: $dark-blue1;
   position: relative;
-  text-decoration: underline 5px $non-active-link;
-  text-underline-offset: 0px;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: $non-active-link;
+  text-decoration-thickness: 0.5rem;
 
   &:visited,
+  &:active,
   &:focus {
-    text-decoration: underline 5px $active-link;
+    text-decoration-color: $active-link;
   }
 }
