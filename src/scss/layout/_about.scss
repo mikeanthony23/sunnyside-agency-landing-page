@@ -7,7 +7,7 @@
   flex-direction: column;
 }
 
-.about-image {
+.about-content {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -28,14 +28,16 @@
 
   h2 {
     font-family: $sec-font;
-    margin: 2em;
+    margin: 1.5em;
+    margin-bottom: 0.7em;
     text-align: center;
+    color: $dark-blue1;
   }
 
   p {
     font-family: $pri-font;
     text-align: center;
-    padding: 1em 1.5em;
+    padding: 0 1em 1em 1em;
     line-height: 1.5;
     color: $dark-blue3;
     position: relative;
@@ -44,18 +46,15 @@
 
 .learn-more-link {
   font-family: $sec-font;
-  padding: 1em;
-  // &::after {
-  //   content: '';
-  //   display: block;
-  //   position: absolute;
-  //   bottom: 0;
-  //   top: 30px;
-  //   left: 30px;
-  //   width: 30px;
-  //   height: 10px;
-  //   background-color: red;
-  //   box-shadow: 10px 0px 0px 1px rgba(0, 0, 0, 0.68);
-  //   border-radius: 20px;
-  // }
+  text-align: center;
+  margin: 1em 1em 1.5em 1em;
+  color: $dark-blue1;
+  position: relative;
+  text-decoration: underline 5px $non-active-link;
+  text-underline-offset: 0px;
+
+  &:visited,
+  &:focus {
+    text-decoration: underline 5px $active-link;
+  }
 }
