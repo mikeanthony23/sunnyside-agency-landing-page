@@ -7,6 +7,7 @@
   align-content: center;
   position: relative;
   margin-bottom: 2em;
+  background-color: $soft-red;
 }
 
 .services-desc {
@@ -16,10 +17,15 @@
 
 .services-design {
   margin-bottom: 2em;
+  & img {
+    width: 100%;
+  }
 }
-.design,
-.photography {
-  width: 100%;
+
+.services-photography {
+  & img {
+    width: 100%;
+  }
 }
 
 .design-texts {
@@ -41,5 +47,39 @@
     font-family: $pri-font;
     color: $dark-cyan1;
     line-height: 1.5;
+  }
+}
+
+// DESKTOP
+
+@media screen and (min-width: 650px) {
+  #services {
+    flex-direction: row;
+  }
+
+  .services-desc {
+    flex: 1;
+  }
+
+  .services-design {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .design-texts {
+    margin-top: -261px;
+  }
+
+  .services-design {
+    & img {
+      content: url('/src/images/desktop/image-graphic-design.jpg');
+    }
+  }
+
+  .services-photography {
+    & img {
+      content: url('/src/images/desktop/image-photography.jpg');
+    }
   }
 }
