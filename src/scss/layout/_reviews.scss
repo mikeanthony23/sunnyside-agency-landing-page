@@ -17,11 +17,23 @@
     margin-top: 4rem;
   }
 
-  & h3 {
-    padding: 2.5em 0;
+  @media screen and (min-width: $bp-large) {
+    margin: 6em 5em 6em 5em;
+  }
+
+  & h4 {
+    margin: 2em;
+    letter-spacing: 0.2em;
     text-align: center;
     color: $grayish-blue;
     font-family: $sec-font;
+  }
+}
+
+.reviews-container {
+  @media screen and (min-width: $bp-large) {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -30,8 +42,9 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 1em;
+  margin: 0.5em;
   font-size: $pri-size;
+
   & * {
     margin: 1em 0;
   }
@@ -44,9 +57,10 @@
   & p {
     margin-top: -0.5em;
     color: $grayish-blue;
+    font-size: 1rem;
   }
 
-  & h4 {
+  & h5 {
     color: $dark-blue1;
     font-family: $sec-font;
   }

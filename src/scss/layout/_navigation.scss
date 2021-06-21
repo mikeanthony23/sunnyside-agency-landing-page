@@ -122,6 +122,12 @@
     border-radius: 3em;
     background: $yellow;
 
+    &:hover,
+    &:active {
+      background: $hover-color1;
+      color: $white;
+    }
+
     @media screen and (min-width: $bp-large) {
       background: $white;
     }

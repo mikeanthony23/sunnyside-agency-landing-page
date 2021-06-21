@@ -4,7 +4,6 @@ $bp-mobile: 375px;
 $bp-large: 1200px;
 
 //primary colors
-$soft-red: hsl(7, 99%, 70%);
 $yellow: hsl(51, 100%, 49%);
 $light-cyan: hsl(181, 100%, 92%);
 $dark-cyan1: hsl(167, 40%, 24%); // (graphic design text)
@@ -25,10 +24,15 @@ $bg-color2: hsl(167, 44%, 70%);
 //font size
 $pri-size: 1.125rem;
 
-//font family
+//font familys
 $pri-font: 'Barlow', sans-serif;
 $sec-font: 'Fraunces', serif;
 
 //links
-$active-link: hsl(51, 93%, 50%);
-$non-active-link: #f7ebb1;
+$active-link-1: hsl(51, 93%, 50%);
+$non-active-link-1: hsl(50, 81%, 83%);
+$active-link-2: hsl(7, 99%, 70%);
+$non-active-link-2: hsl(7, 82%, 90%);
+
+//hover-active effects {
+$hover-color1: #6ecefe;
