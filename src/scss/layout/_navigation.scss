@@ -87,14 +87,17 @@
 
   &::after {
     position: absolute;
+    right: 0;
+    top: -5px;
+    margin-right: -24px;
     display: block;
-    content: '.';
-    width: 12px;
-    color: hsl(0, 0%, 99%);
-    background-color: $white;
-    top: -8px;
-    right: -4px;
-    transform: rotate(315deg) translate(-8px, 5px) skew(-45deg, -1deg);
+    content: '';
+    width: 0;
+    height: 0;
+    border: 40px solid transparent;
+    border-top: 0;
+    border-bottom: 50px solid white;
+    transform: rotate(142deg);
 
     @media screen and (min-width: $bp-large) {
       display: none;
