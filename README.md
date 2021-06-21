@@ -1,6 +1,17 @@
 # Welcome to Sunnyside Agency Landing Page
 
+### Built with
 
-![Untitled 1sunny-agency-design](https://user-images.githubusercontent.com/82145849/121928200-7fdba900-cd72-11eb-92e7-5ff60899f92b.png)
+- Semantic HTML5 markup
+- SASS(scss)
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- Vanilla Javascript
+
+![Group 1mobile](https://user-images.githubusercontent.com/82145849/122787569-0b5fb780-d2e8-11eb-8d9b-24b945415d28.png)
+
+
+
 
 
