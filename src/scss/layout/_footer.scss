@@ -79,27 +79,26 @@
 
   @media screen and (min-width: $bp-large) {
     content: url('/src/images/desktop/image-gallery-milkbottles.jpg');
-    // flex: 1;
   }
 }
 .image-gallery-2 {
   grid-area: oranges;
+
   @media screen and (min-width: $bp-large) {
     content: url('/src/images/desktop/image-gallery-orange.jpg');
-    // flex: 1;
   }
 }
 .image-gallery-3 {
   grid-area: cone;
+
   @media screen and (min-width: $bp-large) {
     content: url('/src/images/desktop/image-gallery-cone.jpg');
-    // flex: 1;
   }
 }
 .image-gallery-4 {
   grid-area: sugar;
+
   @media screen and (min-width: $bp-large) {
     content: url('/src/images/desktop/image-gallery-sugarcubes.jpg');
-    // flex: 1;
   }
 }
