@@ -13,13 +13,37 @@
     'logo menu'
     'welcome-msg welcome-msg'
     'arrow arrow';
+
+  @media screen and (min-width: $bp-large) {
+    background: url('/src/images/desktop/image-header.jpg') no-repeat center;
+    background-size: cover;
+    padding: 1.5em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'logo nav'
+      'welcome-msg welcome-msg'
+      'arrow arrow';
+  }
+
+  .nav {
+    @media screen and (min-width: $bp-large) {
+      grid-area: nav;
+    }
+  }
 }
+
 .logo-container {
   grid-area: logo;
   position: fixed;
   left: 0;
   margin-left: 2em;
   z-index: 1000;
+
+  @media screen and (min-width: $bp-large) {
+    position: static;
+    padding: 0;
+    margin: 1em;
+  }
 }
 
 .burger-btn-container {
@@ -31,19 +55,10 @@
   z-index: 1000;
   background: transparent;
   border: 0px solid transparent;
-}
 
-.welcome-message {
-  grid-area: welcome-msg;
-  text-align: center;
-  font-family: $sec-font;
-  color: $white;
-  font-weight: 900;
-  letter-spacing: 0.5rem;
-}
-.arrow {
-  grid-area: arrow;
-  justify-self: center;
+  @media screen and (min-width: $bp-large) {
+    display: none;
+  }
 }
 
 .nav-links-wrapper {
@@ -59,6 +74,17 @@
   background: $white;
   z-index: 1000;
 
+  @media screen and (min-width: $bp-large) {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: unset;
+    margin: 0;
+    padding: 0;
+  }
+
   &::after {
     position: absolute;
     display: block;
@@ -69,8 +95,13 @@
     top: -8px;
     right: -4px;
     transform: rotate(315deg) translate(-8px, 5px) skew(-45deg, -1deg);
+
+    @media screen and (min-width: $bp-large) {
+      display: none;
+    }
   }
 }
+
 .nav-links {
   margin: 1em;
   & a {
@@ -78,6 +109,10 @@
     font-family: $pri-font;
     color: $dark-blue3;
     letter-spacing: 0.1rem;
+
+    @media screen and (min-width: $bp-large) {
+      color: $light-cyan;
+    }
   }
 
   &:last-child a {
@@ -86,13 +121,31 @@
     padding: 0.6em 1em;
     border-radius: 3em;
     background: $yellow;
+
+    @media screen and (min-width: $bp-large) {
+      background: $white;
+    }
   }
 }
-
-//.nav-links
+.welcome-message {
+  grid-area: welcome-msg;
+  text-align: center;
+  font-family: $sec-font;
+  color: $white;
+  font-weight: 900;
+  letter-spacing: 0.5rem;
+}
+.arrow {
+  grid-area: arrow;
+  justify-self: center;
+}
 
 .hidden {
   display: none;
+
+  @media screen and (min-width: $bp-large) {
+    display: flex;
+  }
 }
 
 .show-overlay {
@@ -104,57 +157,4 @@
   right: 0;
   bottom: 0;
   z-index: 900;
-}
-
-// DEKSTOP DESIGN
-
-@media screen and (min-width: $bp-desktop) {
-  .burger-btn-container {
-    display: none;
-  }
-
-  .header {
-    background: url('/src/images/desktop/image-header.jpg') no-repeat center;
-    background-size: cover;
-    padding: 1.5em;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      'logo nav'
-      'welcome-msg welcome-msg'
-      'arrow arrow';
-  }
-
-  .logo-container {
-    position: static;
-    padding: 0;
-    margin: 1em;
-  }
-
-  .nav {
-    grid-area: nav;
-  }
-
-  .nav-links-wrapper {
-    position: static;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: unset;
-    margin: 0;
-    padding: 0;
-    &::after {
-      display: none;
-    }
-  }
-
-  .nav-links {
-    & a {
-      color: $light-cyan;
-    }
-
-    &:last-child a {
-      background: $white;
-    }
-  }
 }
