@@ -35,11 +35,17 @@
 .logo-container {
   grid-area: logo;
   position: fixed;
+  top: 1.5em;
   left: 0;
   margin-left: 2em;
   z-index: 1000;
+  background: $bg-color3;
+  padding: 0.3em;
+  padding-top: 0.5em;
+  border-radius: 8px;
 
   @media screen and (min-width: $bp-large) {
+    background: unset;
     position: static;
     padding: 0;
     margin: 1em;
@@ -49,11 +55,14 @@
 .burger-btn-container {
   position: fixed;
   grid-area: menu;
-  top: 2.4em;
+  top: 1.83em;
   right: 2em;
   cursor: pointer;
   z-index: 1000;
-  background: transparent;
+  background: $bg-color3;
+  padding: 0.6em;
+  padding-top: 0.85em;
+  border-radius: 5px;
   border: 0px solid transparent;
 
   @media screen and (min-width: $bp-large) {
