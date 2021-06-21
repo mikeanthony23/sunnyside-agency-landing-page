@@ -4,12 +4,14 @@
 
 - Semantic HTML5 markup
 - SASS(scss)
-- Flexbox
-- CSS Grid
 - Mobile-first workflow
 - Vanilla Javascript
 
-![Group 1mobile](https://user-images.githubusercontent.com/82145849/122787569-0b5fb780-d2e8-11eb-8d9b-24b945415d28.png)
+![mobile-design](https://user-images.githubusercontent.com/82145849/122789026-778eeb00-d2e9-11eb-91e1-58baadb34b0b.png)
+![desktop-design](https://user-images.githubusercontent.com/82145849/122789036-7a89db80-d2e9-11eb-8a3e-8ac5231244dd.png)
+
+CREDITS TO FRONTENDMENTOR FOR THE DESIGN!!
+
 
 
 
